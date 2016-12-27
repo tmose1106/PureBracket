@@ -1,0 +1,30 @@
+= PureBracket
+_A simple and pure Javascript Bracket Generator_
+
+PureBracket is an extraordinarily simple bracket generator for all of your
+tournament needs! Just enter a solid number of players (4, 8, 16, etc.),
+throw in your friend's names, and BAM, a beautiful bracket is created.
+
+== Philosophy
+
+The idea behind this project was to make a simple and open source bracket
+generator. Competiting sites are smother with ads, and are generally ugly.
+Other open source projects require Node.Js to work. PureBracket is written
+in everyday Javascript, and can run in any modern browser, completely
+dependency free.
+
+NOTE: The only caveat may be, if you are looking to work on PureBracket, I
+suggest you use the sass file provided by installing
+link:https://github.com/sass/sass[Sass],
+link:https://github.com/sass/sassc[SassC],
+or whatever sass compiler works for you!
+
+== Features
+
+Currently, PureBracket can only create single elimination brackets. But this
+will be changing it the future!
+
+== License
+
+This project is available for free use under the terms of the MIT license.
+Check out the LICENSE file for more details.
