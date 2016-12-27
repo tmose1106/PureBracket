@@ -5,20 +5,37 @@
 </head>
 
 <body>
-  <p>Number of Players (4, 8, 16, 32...)</p>
-  <input id="numberOfPlayers"></input>
-  <p>Players Names (one per line)</p>
-  <textarea id='names'>
-  </textarea>
-  <button onclick="generateBracket()">Generate</button>
-  <div id='bracket'>
-    <!-- ROUND 1 -->
-    <div class='round round1'>
-    </div>
-    <!-- ROUND 2 -->
-    <!-- ROUND 3 -->
-    <!-- ROUND 4 -->
-    <select id='winner'>
-    </select>
+  <div id="options">
+    <h1>PureBracket Test</h1>
+    <h3>Step 1: Enter the number of players</h3>
+    <input id="numberOfPlayers"></input>
+    <h3>Step 2: Enter player's names</h3>
+    <textarea id="names">
+    </textarea>
+    <h3>Step 3: Select options</h3>
+    <div id="selection">
+      <form id="matchType">
+        <input type="radio" name="bracketType" value="single"> Single Elimination<br>
+        <input type="radio" name="bracketType" value="double"> Double Elimination<br>
+      </form>
+      <form id="orderType">
+        <input type="radio" name="orderType" value="ordered">Ordered<br>
+        <input type="radio" name="orderType" value="unordered">Randomized<br>
+      </form>
+   </div>
+    <p>Step 4: Generate the bracket!</p>
+    <button onclick="generateBracket()">Generate</button>
+    <h3>Instructions</h3>
+    <p>Enter a number that is a power of 2 (i.e. 4, 8, 16) except for 2
+    itself. If that is the case, don't use a bracket :)
+    </p>
+    <p>Enter all of the players names, ensuring that there are as many lines
+    in the textbox as the number provided in step 1.
+    </p>
+    <p>Select your options, and then hit the "generate" button! You're done!
+    </p>
+  </div>
+  <div id="bracket">
+    <h2>Your bracket will appear here!</h2>
   </div>
 </body>

@@ -1,5 +1,5 @@
 = PureBracket
-_A simple and pure Javascript Bracket Generator_
+__A simple and pure Javascript Bracket Generator__
 
 PureBracket is an extraordinarily simple bracket generator for all of your
 tournament needs! Just enter a solid number of players (4, 8, 16, etc.),
@@ -14,10 +14,11 @@ in everyday Javascript, and can run in any modern browser, completely
 dependency free.
 
 NOTE: The only caveat may be, if you are looking to work on PureBracket, I
-suggest you use the sass file provided by installing
+suggest installing
 link:https://github.com/sass/sass[Sass],
 link:https://github.com/sass/sassc[SassC],
-or whatever sass compiler works for you!
+or whatever sass compiler works for you. Then edit the `style.sass` file and
+make your (and my) life a little easier.
 
 == Features
 

@@ -1,10 +1,39 @@
+body {
+  margin: 0;
+  display: flex;
+  height: 100%; }
+
+button {
+  display: block;
+  background-color: #2E7BCC;
+  cursor: pointer;
+  padding: 5px;
+  border: 0;
+  font-size: 1.1em; }
+
 div#bracket {
-  display: none; }
+  background-color: lightgrey;
+  padding: 25px;
+  display: inline-block;
+  width: 100%; }
+  div#bracket h2 {
+    display: block;
+    color: grey;
+    text-align: center;
+    vertical-align: middle; }
+
+div#options {
+  background-color: #2e404e;
+  color: #fff;
+  padding: 0 10px;
+  min-width: 450px; }
 
 div.round {
   vertical-align: top;
   display: inline-block;
-  width: 15%; }
+  min-width: 10%;
+  width: 15%;
+  max-width: 20%; }
 
 div.round1 div.match {
   padding: 10px 0;
@@ -48,13 +77,26 @@ div.spacer {
   border-bottom: 1px solid #555;
   border-right: 1px solid #555; }
 
-input {
-  display: block; }
+input#numberOfPlayers {
+  color: #fff;
+  background-color: #181824;
+  border: 2px solid #181823;
+  border-radius: 2px;
+  display: block;
+  width: 68px; }
 
 select#winner {
-  display: block;
-  height: 30px;
-  margin: 385px 0; }
+  display: inline-block;
+  height: 30px; }
+
+textarea#names {
+  background-color: #181824;
+  border: 2px solid #181823;
+  border-radius: 2px;
+  color: #fff;
+  height: 128px;
+  width: 400px;
+  resize: none; }
 
 p.warningMessage {
   display: inline-block;
