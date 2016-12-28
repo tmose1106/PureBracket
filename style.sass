@@ -1,6 +1,7 @@
 body
   margin: 0
   display: flex
+  min-height: 100%
   height: 100%
 
 button
@@ -12,6 +13,7 @@ button
   font-size: 1.1em
 
 div#bracket
+  margin-left: 450px
   background-color: lightgrey
   padding: 25px
   display: inline-block
@@ -24,10 +26,22 @@ div#bracket
     vertical-align: middle;
 
 div#options
+  position: fixed
   background-color: #2e404e
   color: #fff
-  padding: 0 10px
-  min-width: 450px
+  padding: 0 10px 10px 10px
+  width: 450px
+  height: 100%
+  overflow-y: auto
+
+div#projectInfo
+  display: flex
+  margin-bottom: 20px
+  img
+    height: 50px
+
+  p
+    margin: 0
 
 div.round
   vertical-align: top

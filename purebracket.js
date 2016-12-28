@@ -89,7 +89,8 @@ function generateBracket() {
       names = nameBox.value.split("\n")
       enoughPlayersListed = (names.length == numberInput.value);
 
-  displayWarning(enoughPlayersListed, "Please enter the number of players required",
+  displayWarning(enoughPlayersListed,
+                 "Please enter the number of players denoted above",
                  "playerWarning");
 
   var bracketBox = document.getElementById("bracket");
@@ -100,9 +101,10 @@ function generateBracket() {
   }
 
   var bracketSelect = document.getElementById("matchType")
-      bracketValue = getSelectionValue(bracketSelect)
-      orderSelect = document.getElementById("orderType")
-      orderValue = getSelectionValue(orderSelect);
+      bracketValue = getSelectionValue(bracketSelect);
+
+  displayWarning(Boolean(bracketValue), "Please select a bracket style",
+                 "bracketStyleWarning")
 
   var mainBracket = document.createElement("div");
 
@@ -115,6 +117,12 @@ function generateBracket() {
     secondaryBracket.setAttribute("id", "secondaryBracket");
     bracketBox.appendChild(secondaryBracket);
   }
+
+  var orderSelect = document.getElementById("orderType")
+      orderValue = getSelectionValue(orderSelect);
+
+  displayWarning(Boolean(orderValue), "Please select a player order type",
+                 "orderTypeWarning")
 
   var matchArray;
   if (orderValue == "ordered") {

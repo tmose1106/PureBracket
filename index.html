@@ -1,17 +1,16 @@
 <head>
-  <title>Test Bracket</title>
+  <title>PureBracket</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script type="text/javascript" src="purebracket.js"></script>
 </head>
 
 <body>
   <div id="options">
-    <h1>PureBracket Test</h1>
+    <h1>PureBracket</h1>
     <h3>Step 1: Enter the number of players</h3>
     <input id="numberOfPlayers"></input>
     <h3>Step 2: Enter player's names</h3>
-    <textarea id="names">
-    </textarea>
+    <textarea id="names"></textarea>
     <h3>Step 3: Select options</h3>
     <div id="selection">
       <form id="matchType">
@@ -26,14 +25,21 @@
     <p>Step 4: Generate the bracket!</p>
     <button onclick="generateBracket()">Generate</button>
     <h3>Instructions</h3>
-    <p>Enter a number that is a power of 2 (i.e. 4, 8, 16) except for 2
-    itself. If that is the case, don't use a bracket :)
+    <p>Enter a number that is a power of 2 (i.e. 4, 8, 16) Next, enter all
+    of the players names, ensuring that there are as many lines in the textbox
+    as the number provided in step 1. Select your options, and then hit the
+    "generate" button.
     </p>
-    <p>Enter all of the players names, ensuring that there are as many lines
-    in the textbox as the number provided in step 1.
+    <p>Now use the selection boxes when a player wins to denote that they are
+    moving forward in the tournament. And don't forget to have fun!
     </p>
-    <p>Select your options, and then hit the "generate" button! You're done!
-    </p>
+    <h3>Project Info</h3>
+    <div id="projectInfo">
+      <p>PureBracket is released under the terms of the MIT Open Source License.
+      Check out the repo on <a href="https://github.com/tmose1106/PureBracket">GitHub</a>
+      </p>
+      <img src="github.svg" alt="github logo">
+    </div>
   </div>
   <div id="bracket">
     <h2>Your bracket will appear here!</h2>
