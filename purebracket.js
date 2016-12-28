@@ -31,7 +31,7 @@ function getSelectionValue(object) {
 }
 
 function createSelection(inputArray) {
-  var alphabeticalArray = inputArray.sort()
+  var alphabeticalArray = inputArray.slice().sort()
       selectionItem = document.createElement("select")
       blankItem = document.createElement("option");
 
@@ -90,7 +90,7 @@ function generateBracket() {
       enoughPlayersListed = (names.length == numberInput.value);
 
   displayWarning(enoughPlayersListed,
-                 "Please enter the number of players denoted above",
+                 "Please enter the same number of players as submitted in step 1",
                  "playerWarning");
 
   var bracketBox = document.getElementById("bracket");
@@ -239,5 +239,4 @@ function generateBracket() {
 
   winnerSelect.style.margin = marginSize + "px 0";
   secondaryBracket.appendChild(winnerSelect);
-
 }
