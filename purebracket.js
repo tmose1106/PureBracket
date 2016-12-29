@@ -27,7 +27,7 @@ function getSelectionValue(object) {
    * with radio buttons inside
    */
   for (i = 0; i < object.length; i++) {
-    if(object[i].checked){
+    if (object[i].checked){
       return object[i].value;
     }
   }
@@ -74,14 +74,14 @@ function generateBracket() {
     /* Display a simple warning above warningObject if condition is false,
      * If it is true, and a warning message object is present, remove it.
      */
-    if(condition != true) {
+    if (condition != true) {
       if (Boolean(document.getElementById(messageId)) != true) {
         var warning = document.createElement("p")
         // Set the warning's id attribute so it can be found later
         warning.setAttribute("id", messageId);
         // Set a class name for simple styling purposes
         warning.className = "warningMessage";
-        warning.append(document.createTextNode(messageString));
+        warning.appendChild(document.createTextNode(messageString));
         optionSection.insertBefore(warning, warningObject);
       }
       // Throw an error and stop execution, please

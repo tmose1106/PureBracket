@@ -27,12 +27,12 @@ compile it and make your (and my) life a little easier.
 
 == Features
 
-Currently, PureBracket can create single elimination and double elimination
-brackets up to 16 players. It can also use the player's names in the order
+Currently, PureBracket can create single elimination or double elimination
+brackets up to 32 players. It can also use the player's names in the order
 they are typed, or sort them randomly.
 
-NOTE: PureBracket can create brackets larger than 16 players, but they will
-not display correctly. This will be fixed in the future.
+NOTE: PureBracket can create brackets larger than 32 players, but they will
+not display correctly. This may change in the future.
 
 == License
 
